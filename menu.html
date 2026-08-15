@@ -1,24 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es"> <!-- cambiar valor de atributo lang -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Alke Wallet | Menú</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/menu.css">
 </head>
 
 <body>
-    <div class="container">
+    <main class="container-fluid flex-grow-1">
         <header>
             <h1>Menú Pincipal</h1>
         </header>
-        <div class="from-group">
-            <label for="balance">Dinero en mi cuenta</label>
-            <h3>$42.584</h3>
+        <div class="row align-items-center h-100">
+            <div class="col-md-4 col-12">
+
+            </div>
+            <div class="col-md-4 d-flex justify-content-center col-12">
+                <div class="card p-4 d-flex justify-content-center shadow-lg text-center"
+                    style="width: 22rem; z-index: 10">
+                    <label for="balance">CuentaRUT</label>
+                    <h6>00023458920</h6>
+                    <h2 class="mb-0">$42.584</h2> 
+                    <span class="badge bg-primary">Disponible</span>
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <div class="text-center">
+                    <div class="card p-4 d-flex justify-content-center shadow-lg text-center text-bg-light mb-3" style="max-width: 18rem;">
+                        <div class="card-body">
+                            <a class="btn btn-primary" href="deposit.html">Depositar</a>
+                        </div>
+                    </div>
+                    <div class="card p-4 d-flex justify-content-center shadow-lg text-center text-bg-light mb-3" style="max-width: 18rem;">
+                        <div class="card-body">
+                            <a class="btn btn-primary" href="sendmoney.html">Enviar Dinero</a>
+                        </div>
+                    </div>
+                    <div class="card p-4 d-flex justify-content-center shadow-lg text-center text-bg-light mb-3" style="max-width: 18rem;">
+                        <div class="card-body">
+                            <a class="btn btn-primary" href="transactions.html">Últimos Movimientos</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <a href="deposit.html">Depositar</a>
-        <a href="sendmoney.html">Enviar Dinero</a>
-        <a href="transactions.html">Últimos Movimientos</a>
-    </div>
+    </main>
+    <footer>
+        <p>© 2026 Kevin Morales.</p>
+    </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+
 </html>

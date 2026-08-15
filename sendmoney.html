@@ -1,31 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Enviar Dinero - Alke Wallet</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+        <link rel="stylesheet" href="./assets/css/sendmoney.css">
 </head>
-<body>
-    <div class="container">
-        <h2>Enviar Dinero</h2>
-        <form>
-            <div class="from-group">
-                <label for="searchContac">Buscar en la agenda de transferencias:</label>
-                <input type="text" class="form-control" id="searchContac" placeholder="Searh contact">
-            </div>
-            <button type="submit" class="btn btn-primary">Agregar nuevo contacto</button>
-            <h3>Contactos</h3>
-            <ul id="contactlist" class="list-group">
-                <li class="list-group-item">
-                    <div class="contact-info">
-                        <spam class="contact-name">John down</spam>
-                        <spam class="contact-details">CBU: 208498763, Alias:john.down, Banco: Banco de chile</spam>
+
+<body class="bg-light">
+
+    <div class="container-fluid min-vh-100 w-100 d-flex flex-column p-0">
+
+        <header class="py-4">
+            <h1 class="text-center fw-bold">Alke Wallet</h1>
+        </header>
+
+        <main class="flex-grow-1 d-flex justify-content-center align-items-center">
+
+            <div class="card shadow-lg border-0 rounded-4 p-4"
+                style="max-width: 600px; width: 100%;">
+
+                <div class="text-center mb-4">
+                    <h2 class="fw-bold">Enviar Dinero</h2>
+
+                    <p class="text-muted">
+                        Selecciona un contacto para realizar una transferencia
+                    </p>
+                </div>
+
+                <form>
+
+                    <div class="mb-3">
+                        <label for="searchContact" class="form-label fw-semibold">
+                            Buscar en la agenda de transferencias
+                        </label>
+
+                        <input type="text"
+                            class="form-control form-control-lg"
+                            id="searchContact"
+                            placeholder="Buscar contacto...">
                     </div>
-                </li>
-            </ul>
-            <button type="submit" class="btn btn-primary">Enviar dinero</button>
-        </form>
-        <a href="menu.html" class="btn btn-secondary">Volver al menú Principal</a>
+
+                    <div class="d-grid mb-4">
+                        <button type="button"
+                            class="btn btn-outline-primary">
+                            + Agregar nuevo contacto
+                        </button>
+                    </div>
+
+                    <h4 class="mb-3">Contactos</h4>
+
+                    <ul id="contactList" class="list-group mb-4">
+
+                        <li class="list-group-item p-3">
+
+                            <div class="d-flex justify-content-between align-items-center">
+
+                                <div>
+                                    <h6 class="mb-1 fw-bold">
+                                        John Down
+                                    </h6>
+
+                                    <small class="text-muted">
+                                        CBU: 208498763
+                                    </small>
+
+                                    <br>
+
+                                    <small class="text-muted">
+                                        Alias: john.down
+                                    </small>
+
+                                    <br>
+
+                                    <small class="text-muted">
+                                        Banco: Banco de Chile
+                                    </small>
+                                </div>
+
+                                <input type="radio"
+                                    name="contact"
+                                    class="form-check-input"
+                                    value="john-down">
+
+                            </div>
+
+                        </li>
+
+                    </ul>
+
+                    <div class="d-grid mb-2">
+                        <button type="submit"
+                            class="btn btn-primary btn-lg">
+                            Enviar dinero
+                        </button>
+                    </div>
+
+                </form>
+
+                <div class="d-grid">
+                    <a href="menu.html"
+                        class="btn btn-secondary">
+                        Volver al menú principal
+                    </a>
+                </div>
+
+            </div>
+
+        </main>
+
+        <footer class="text-center py-3">
+            <small>© 2026 Alke Wallet</small>
+        </footer>
+
     </div>
+
 </body>
 </html>
